@@ -1,0 +1,8 @@
+version: '3'
+services:
+  mongodb_container: 
+    image: mongo:4.2.0-bionic
+    volumes:
+      - ./db:/data/db
+    ports:
+      - 27017:27017
